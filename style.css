@@ -74,7 +74,8 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1.1em;
+  font-family: "Press Start 2P", serif;
+  font-size: .957em;
   transition: background-color 0.3s;
 }
 
