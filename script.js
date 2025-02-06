@@ -58,11 +58,6 @@ function handleGuess(e) {
   const selectedColor = e.target.dataset.color;
   const buttons = document.querySelectorAll(".color-option");
 
-  // buttons.forEach((button) => {
-  //   button.disabled = true;
-  //   button.style.cursor = "not-allowed";
-  // });
-
   if (selectedColor === targetColor) {
     score++;
     scoreElement.textContent = `Score: ${score}`;
