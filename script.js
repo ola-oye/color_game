@@ -19,6 +19,21 @@ const gameStatus = document.querySelector('.status');
 const scoreElement = document.querySelector('.score');
 const newGameBtn = document.querySelector('.new-game');
 
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const body = document.body;
+  const imageUrl = 'bright-rangoli-colors-spread-black-surface.jpg';
+
+  // Create a new image element to preload the background image
+  const img = new Image();
+  img.src = imageUrl;
+  img.onload = function () {
+      body.style.backgroundImage = `url(${imageUrl})`;
+      body.style.transition = 'background-image 0.5s ease-in-out';
+  };
+});
+
 let score = 0;
 let targetColor;
 
